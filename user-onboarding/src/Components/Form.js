@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import * as yup from "yup";
+import axios from "axios";
 
-const Form = () => {
-  console.log("Form props: ", props);
-};
+export default function Form() {
+  //include export default in the function and it doesn't have to be written at the bottom of the page.
 
-export default Form;
+  //managing state for our form inputs
+
+  const [formState, setFormState] = useState({
+    name: "",
+  });
+}
