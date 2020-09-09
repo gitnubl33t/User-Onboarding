@@ -16,4 +16,10 @@ export default function Form() {
     e.preventDefault();
     console.log("form submitted!");
   };
+
+  //onChange function
+  const inputChange = (e) => {
+    console.log("input changed!", e.target.value);
+    setFormState({ name: e.target.value });
+  };
 }
