@@ -6,9 +6,11 @@ export default function Form() {
   //include export default in the function and it doesn't have to be written at the bottom of the page.
 
   //managing state for our form inputs
-
   const [formState, setFormState] = useState({
     name: "",
+    email: "",
+    password: "",
+    tos: "",
   });
 
   //onSubmit function
@@ -26,8 +28,23 @@ export default function Form() {
   return (
     <form onSubmit={formSubmit}>
       <label htmlFor="name">
-        Name
+        Name:
         <input type="text" name="name" />
+      </label>
+
+      <label htmlFor="email">
+        Email:
+        <input type="email" name="email" />
+      </label>
+
+      <label htmlFor="password">
+        Password:
+        <input type="text" name="password" />
+      </label>
+
+      <label htmlFor="tos">
+        Terms of Service:
+        <input type="checkbox" name="tos" />
       </label>
 
       <button>Submit</button>
