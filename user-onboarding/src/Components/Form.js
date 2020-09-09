@@ -39,7 +39,7 @@ export default function Form() {
 
       <label htmlFor="password">
         Password:
-        <input type="text" name="password" />
+        <input type="password" name="password" />
       </label>
 
       <label htmlFor="tos">
