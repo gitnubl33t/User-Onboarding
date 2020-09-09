@@ -29,22 +29,48 @@ export default function Form() {
     <form onSubmit={formSubmit}>
       <label htmlFor="name">
         Name:
-        <input type="text" name="name" />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="enter your name"
+          value={formState.name} //this allows the input to be controlled (by state)
+          onChange={inputChange}
+        />
       </label>
 
       <label htmlFor="email">
         Email:
-        <input type="email" name="email" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="enter your email"
+          value={formState.email}
+          onChange={inputChange}
+        />
       </label>
 
       <label htmlFor="password">
         Password:
-        <input type="password" name="password" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="create a password"
+          value={formState.password}
+          onChange={inputChange}
+        />
       </label>
 
       <label htmlFor="tos">
         Terms of Service:
-        <input type="checkbox" name="tos" />
+        <input
+          type="checkbox"
+          name="tos"
+          value={formState.tos}
+          checked={true}
+        />
       </label>
 
       <button>Submit</button>
