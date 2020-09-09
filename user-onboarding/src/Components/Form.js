@@ -10,4 +10,10 @@ export default function Form() {
   const [formState, setFormState] = useState({
     name: "",
   });
+
+  //onSubmit function
+  const formSubmit = (e) => {
+    e.preventDefault();
+    console.log("form submitted!");
+  };
 }
