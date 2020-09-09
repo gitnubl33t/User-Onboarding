@@ -15,7 +15,7 @@ export default function Form() {
 
   //onSubmit function
   const formSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); //prevents page refresh on submit
     console.log("form submitted!");
   };
 
